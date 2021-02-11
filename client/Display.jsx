@@ -1,14 +1,17 @@
 import React from 'react'
 
-class Display extends React.component {
-  render() {
-    return (
-      <div style={{"width" : "500px", "height" : "100px"}}>
-
-
+const Display = ({messages}) => {
+  return (
+      <div>
+        {messages.map(message => (
+          <div style={{
+            border: '1px solid blue',
+            padding: '10px',
+            marginBottom: '5px'
+          }}>{message}</div>
+        ))}
       </div>
-    )
-  }
+    );
 }
 
-export default Display
+export default Display;
