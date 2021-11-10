@@ -5,7 +5,7 @@ class Button extends React.Component {
   render() {
     return (
       <div>
-        <input placeholder='Type here...' id='button'></input>
+        <input placeholder='Type here...' id='btn'></input>
         <input placeholder='Type here...' id='button'></input>
       </div>
     )
