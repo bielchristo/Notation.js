@@ -1,4 +1,5 @@
 import React from "react"
+import Login from './login.jsx'
 // import { AutomaticPrefetchPlugin } from "webpack";
 // import Button from './Button.jsx'
 import Display from './Display.jsx'
@@ -45,7 +46,7 @@ class App extends React.Component {
             
             <input
               id="inputField"
-              placeholder='Add your note here...'
+              placeholder='hi Annie...'
               onChange={(evt) => {
                 this.setState({
                   currentMessage: evt.target.value
@@ -55,6 +56,7 @@ class App extends React.Component {
         </div>
 
         <Display messages={this.state.messages}/>
+        <Login />
       </div>
     );
   }

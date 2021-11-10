@@ -33,5 +33,19 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       } 
     ]
-  }
+  },
+
+
+  devServer: {
+    contentBase: './client/',
+    publicPath: '/build/',
+    port: 8001,
+    proxy:{
+      '/': 'http://localhost:3000'
+    },
+    hot: true,
+  },
+
+
+
 }
