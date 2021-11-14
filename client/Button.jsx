@@ -6,7 +6,7 @@ class Button extends React.Component {
     return (
       <div>
         <input placeholder='Type here...' id='btn'></input>
-        <input placeholder='Type here...' id='button'></input>
+        <input placeholder='' id='button'></input>
       </div>
     )
   }
